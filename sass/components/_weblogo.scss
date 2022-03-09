@@ -1,0 +1,67 @@
+.weblogo {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--third-color);
+  padding-left: 15px;
+
+  &--header {
+    width: 145px;
+  }
+
+  &__black {
+    color: var(--main-color);
+  }
+  &__white {
+    color: var(--secondary-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--third-color);
+    fill: var(--third-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline-color: var(--third-color);
+  }
+  &--footer {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .weblogo {
+    &--header {
+      width: 134px;
+    }
+    &--footer {
+      width: 154px;
+      margin-left: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .weblogo {
+    &--header {
+      width: 134px;
+    }
+    &--footer {
+      width: 154px;
+      margin-left: 39px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .weblogo {
+    &--header {
+      width: 145px;
+    }
+    &--footer {
+      width: 145px;
+    }
+  }
+}

@@ -1,0 +1,208 @@
+.link {
+  padding-top: 40px;
+  padding-left: 70px;
+  display: flex;
+  justify-content: space-between;
+
+  &__add {
+    width: 206px;
+  }
+
+  &__title,
+  &__newsletter-title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 206px;
+  }
+
+  &__icon-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    fill: var(--secondary-color);
+
+    &:hover,
+    &:focus {
+      background: var(--third-color);
+      fill: var(--secondary-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      outline-color: var(--third-color);
+    }
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__svg,
+  &__signup-svg {
+    size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__newsletter {
+    display: flex;
+    padding-left: 78px;
+  }
+
+  &__newsletter-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--fourth-color);
+    color: var(--fourth-color);
+    background-color: transparent;
+    outline-style: none;
+    color: var(--secondary-color);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__signup {
+    padding-left: 12px;
+    padding-top: 36px;
+  }
+
+  &__signup-button {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--third-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+
+  &__signup-text {
+    margin: 0;
+    padding: 0;
+    margin-left: 28px;
+  }
+
+  &__signup-send {
+    width: 24px;
+    height: 24px;
+    margin-right: 28px;
+    fill: var(--secondary-color);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .link {
+    display: block;
+    padding-top: 40px;
+    padding-left: 0px;
+
+    &__add {
+      margin-left: 80px;
+      width: 206px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__newsletter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      padding-left: 78px;
+      padding-top: 60px;
+    }
+    &__newsletter-input {
+      margin-left: -60px;
+      padding: 0px;
+      justify-content: center;
+    }
+    &__signup-text {
+      margin-left: 42px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .link {
+    padding-top: 40px;
+    padding-left: 0px;
+
+    display: block;
+
+    &__add {
+      margin-left: 144px;
+    }
+
+    &__title {
+      text-align: center;
+      width: 206px;
+      padding-top: 25px;
+    }
+    &__newsletter-title {
+      text-align: center;
+    }
+
+    &__newsletter {
+      width: 450px;
+      display: block;
+      padding-top: 102px;
+      margin-left: -225px;
+    }
+
+    &__newsletter-input {
+      padding: 0px;
+      justify-content: center;
+    }
+
+    &__signup {
+      padding-left: 0px;
+      padding-top: 36px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link {
+    padding-top: 40px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

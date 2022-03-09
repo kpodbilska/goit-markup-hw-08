@@ -1,0 +1,41 @@
+.mobile {
+  background-color: #ffffff;
+  flex-direction: column;
+  position: absolute;
+  border: none;
+
+  &__open {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    margin-left: 300px;
+  }
+  &__icon {
+    width: 24px;
+    height: 16px;
+    fill: #212121;
+  }
+
+  &__icon:focus,
+  &__icon:hover {
+    fill: #2196f3;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+}

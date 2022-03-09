@@ -1,0 +1,75 @@
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__pages {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 45px;
+      right: 0;
+      width: 0;
+      height: 5px;
+      background-color: var(--third-color);
+      border-radius: 4px;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--third-color);
+      fill: var(--third-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      outline-color: var(--third-color);
+    }
+
+    &:hover::after,
+    &:focus::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  &--active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: var(--third-color);
+    border-radius: 4px;
+    position: absolute;
+    bottom: -32px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation {
+    margin-left: 83px;
+    margin-right: 101px;
+    width: 282px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin-left: 93px;
+    margin-right: 371px;
+    width: 254px;
+  }
+}

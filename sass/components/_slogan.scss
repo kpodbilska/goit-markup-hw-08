@@ -1,0 +1,92 @@
+.slogan {
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+  height: 37.5rem;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    width: 696px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 106px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--secondary-color);
+  }
+
+  &__button {
+    margin: 30px auto;
+    display: block;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: var(--third-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--secondary-color);
+
+    &:hover,
+    &:focus {
+      background: var(--third-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      color: var(--secondary-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      outline-color: var(--third-color);
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .slogan {
+    height: 480px;
+    &__title {
+      padding-top: 58px;
+      width: 365px;
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .slogan {
+    height: 400px;
+    &__title {
+      padding-top: 58px;
+      width: 365px;
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slogan {
+    height: 600px;
+  }
+}
