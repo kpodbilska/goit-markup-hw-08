@@ -58,6 +58,11 @@
       flex-wrap: wrap;
       gap: 30px;
     }
+    &__background {
+      width: 210px;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
@@ -75,7 +80,6 @@
     }
     &__background {
       width: 226px;
-      height: 92px;
       display: flex;
       justify-content: center;
     }
