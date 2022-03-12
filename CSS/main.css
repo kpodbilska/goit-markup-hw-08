@@ -791,14 +791,13 @@
   }
 }
 .slogan {
-  width: 480px;
   height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 480px 400px;
+  background-size: cover;
   position: relative;
 }
 .slogan__title {
@@ -863,9 +862,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .slogan {
-    width: 768px;
     height: 400px;
-    background-size: 768px 400px;
   }
   .slogan__title {
     padding-top: 58px;
@@ -875,9 +872,7 @@
 }
 @media screen and (min-width: 1200px) {
   .slogan {
-    width: 1200px;
     height: 600px;
-    background-size: 1200px 600px;
   }
   .slogan__title {
     padding: 0;
