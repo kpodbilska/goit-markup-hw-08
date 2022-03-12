@@ -8,26 +8,32 @@
     flex-wrap: wrap;
     padding-bottom: 14px;
     box-shadow: 0px;
+    gap: 15px 8px;
   }
 
   &__wszystkie {
     width: 121px;
+    border-width: 0px;
   }
 
   &__strony {
     width: 93px;
+    border-width: 0px;
   }
 
   &__aplikacje {
     width: 114px;
+    border-width: 0px;
   }
 
   &__dizajn {
     width: 91px;
+    border-width: 0px;
   }
 
   &__marketing {
     width: 121px;
+    border-width: 0px;
   }
 }
 

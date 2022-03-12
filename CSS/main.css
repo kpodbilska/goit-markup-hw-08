@@ -313,21 +313,27 @@
   flex-wrap: wrap;
   padding-bottom: 14px;
   box-shadow: 0px;
+  gap: 15px 8px;
 }
 .buttons__wszystkie {
   width: 121px;
+  border-width: 0px;
 }
 .buttons__strony {
   width: 93px;
+  border-width: 0px;
 }
 .buttons__aplikacje {
   width: 114px;
+  border-width: 0px;
 }
 .buttons__dizajn {
   width: 91px;
+  border-width: 0px;
 }
 .buttons__marketing {
   width: 121px;
+  border-width: 0px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
