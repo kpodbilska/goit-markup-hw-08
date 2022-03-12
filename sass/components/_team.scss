@@ -1,6 +1,6 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
 
   &__title {
@@ -18,16 +18,21 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
   &--space {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
   }
 
   &__card {
-    width: 270px;
-    height: 428px;
+    width: 450px;
+    height: 622px;
     background: var(--secondary-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -35,8 +40,8 @@
   }
 
   &__img {
-    width: 270px;
-    left: 215px;
+    width: 450px;
+    left: 460px;
   }
 
   &__name {
@@ -91,7 +96,7 @@
   &__icons {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 16px 32px;
     fill: var(--secondary-color);
   }
@@ -108,63 +113,32 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .team {
-    &__list {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
-    &__list {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    &--space {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
     &__card {
       width: 354px;
       height: 536px;
-      background: var(--secondary-color);
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
     }
 
     &__img {
       width: 354px;
       left: 374px;
     }
-
-    &__icons {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 16px 32px;
-      fill: var(--secondary-color);
-    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team {
-    &__list {
-      display: flex;
-      gap: 30px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__img {
+      width: 270px;
+      left: 215px;
     }
-    &--space {
-      display: flex;
-      justify-content: space-between;
+
+    &__card {
+      width: 270px;
+      height: 428px;
     }
   }
 }

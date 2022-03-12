@@ -1,0 +1,99 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-color);
+  }
+
+  &__signup-svg {
+    size: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--fourth-color);
+    color: var(--fourth-color);
+    background-color: transparent;
+    outline-style: none;
+    color: var(--secondary-color);
+    border-radius: 4px;
+    width: 450px;
+    height: 50px;
+    padding-left: 16px;
+    justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__signup {
+    padding-left: 12px;
+    padding-top: 36px;
+    display: flex;
+    justify-content: center;
+  }
+  &__signup-button {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--third-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--secondary-color);
+  }
+  &__signup-text {
+    margin: 0;
+    padding: 0;
+    margin-left: 28px;
+  }
+  &__signup-send {
+    width: 24px;
+    height: 24px;
+    margin-right: 28px;
+    fill: var(--secondary-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .newsletter {
+    padding-top: 247px;
+    margin-left: -170px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .newsletter {
+    padding-top: 40px;
+    padding-left: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__title {
+      text-align: left;
+    }
+    &__input {
+      width: 358px;
+    }
+  }
+}

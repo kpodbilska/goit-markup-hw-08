@@ -1,6 +1,6 @@
 .address-header {
+  display: none;
   font-style: normal;
-  display: flex;
   align-items: center;
   justify-items: center;
   fill: var(--fourth-color);
@@ -57,24 +57,13 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .address-header {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address-header {
     display: block;
     &__email {
-      width: 161px;
       display: block;
     }
 
-    &__tel {
-      width: 160px;
-      margin-left: 0px;
-    }
     &__tel {
       margin-left: 0px;
     }
@@ -83,19 +72,6 @@
 
 @media screen and (min-width: 1200px) {
   .address-header {
-    &__email {
-      width: 161px;
-      display: flex;
-      align-items: center;
-      justify-items: center;
-    }
-
-    &__tel {
-      width: 160px;
-      margin-left: 30px;
-      display: flex;
-      align-items: center;
-      justify-items: center;
-    }
+    display: flex;
   }
 }

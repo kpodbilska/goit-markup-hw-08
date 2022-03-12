@@ -1,15 +1,10 @@
 .corps {
+  width: 490px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: bold;
   color: var(--family-color);
   margin: 0 auto;
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .corps {
-    width: 490px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

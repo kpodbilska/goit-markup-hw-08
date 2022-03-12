@@ -1,15 +1,12 @@
 .projects {
   padding-top: 34px;
+  width: 480px;
 
   &__row {
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 94px;
+    padding: 0px 15px;
+    display: block;
+    margin-bottom: 60px;
   }
 
   &__list {
@@ -33,9 +30,9 @@
 
   &__popup {
     position: relative;
-    width: 370px;
-    height: 294px;
     overflow: hidden;
+    width: 450px;
+    height: 294px;
   }
 
   &__popup-text {
@@ -95,43 +92,16 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .projects {
-    width: 480px;
-
-    &__list {
-      width: 480px;
-    }
-
-    &__row {
-      padding: 0px 15px;
-      display: block;
-    }
-    &__img {
-      width: 450px;
-      height: 294px;
-    }
-    &__popup {
-      position: relative;
-      width: 450px;
-      height: 294px;
-      overflow: hidden;
-    }
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects {
     width: 768px;
 
     &__row {
-      padding: 0px 15px;
+      display: flex;
       justify-content: left;
       justify-items: center;
       flex-wrap: wrap;
-
       gap: 30px;
-      margin-bottom: 60px;
     }
     &__img {
       width: 354px;
@@ -139,10 +109,8 @@
     }
 
     &__popup {
-      position: relative;
       width: 354px;
       height: 294px;
-      overflow: hidden;
     }
   }
 }
@@ -161,6 +129,10 @@
       margin-bottom: 94px;
     }
     &__img {
+      width: 370px;
+      height: 294px;
+    }
+    &__popup {
       width: 370px;
       height: 294px;
     }

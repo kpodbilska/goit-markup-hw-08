@@ -1,11 +1,13 @@
 .tasks {
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 0px;
 
   &__display {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+
     padding-bottom: 0px;
     margin-bottom: 94px;
   }
@@ -13,6 +15,7 @@
   &__list {
     margin: 0;
     padding: 0;
+    width: 450px;
     list-style-type: none;
   }
 
@@ -59,34 +62,22 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .tasks {
-    &__list {
-      width: 450px;
-    }
-    &__display {
-      justify-content: center;
-      gap: 30px;
-    }
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .tasks {
     &__list {
       width: 354px;
-    }
-    &__display {
-      justify-content: center;
-      gap: 30px;
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .tasks {
+    padding-top: 94px;
     &__list {
       width: 270px;
+    }
+    &__display {
+      justify-content: space-between;
     }
   }
 }

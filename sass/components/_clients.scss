@@ -1,6 +1,6 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__title {
     margin: 0;
@@ -16,10 +16,14 @@
   &__pictures {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
   &__background {
-    width: 170px;
+    display: flex;
+    justify-content: center;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -50,47 +54,23 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .clients {
-    &__pictures {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-    &__background {
-      width: 210px;
-      display: flex;
-      justify-content: center;
-    }
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    &__pictures {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
     &__background {
       width: 226px;
-      display: flex;
-      justify-content: center;
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
     &__pictures {
-      display: flex;
-      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+    &__background {
+      width: 170px;
     }
   }
 }
