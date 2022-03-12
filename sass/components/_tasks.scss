@@ -1,19 +1,19 @@
 .tasks {
   padding-top: 60px;
   padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
 
   &__display {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-
     padding-bottom: 0px;
     margin-bottom: 94px;
   }
 
   &__list {
-    margin: 0;
     padding: 0;
     width: 450px;
     list-style-type: none;
@@ -66,6 +66,9 @@
   .tasks {
     &__list {
       width: 354px;
+    }
+    &__display {
+      width: 768px;
     }
   }
 }

@@ -1,20 +1,8 @@
 .corps {
-  width: 490px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: bold;
   color: var(--family-color);
   margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .corps {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .corps {
-    width: 1200px;
-  }
+  width: 100vw;
 }

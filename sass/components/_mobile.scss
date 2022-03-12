@@ -1,7 +1,7 @@
 .mobile {
   background-color: #ffffff;
+  display: flex;
   flex-direction: column;
-  position: absolute;
   border: none;
 
   &__open {
@@ -9,6 +9,7 @@
     height: 40px;
     background-color: transparent;
     margin-left: 130px;
+    margin-right: auto;
     padding: 12px 8px;
   }
   &__icon {

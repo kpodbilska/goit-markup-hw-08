@@ -1,28 +1,10 @@
 .container {
   margin: 0px auto;
-  width: 480px;
 }
 .container--header {
-  width: 480px;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 80px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container {
-    width: 768px;
-  }
-  .container--header {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-  .container--header {
-    width: 1200px;
-  }
+  margin: 0 auto;
 }

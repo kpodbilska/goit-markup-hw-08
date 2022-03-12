@@ -115,6 +115,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
+    &__display {
+      width: 768px;
+    }
     &__card {
       width: 354px;
       height: 536px;

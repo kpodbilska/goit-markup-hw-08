@@ -1,7 +1,6 @@
 .address-footer {
   font-style: normal;
   text-align: center;
-  margin-left: 20px;
 
   &__address {
     margin: 0;
@@ -40,8 +39,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address-footer {
-    margin-left: 76px;
-    margin-top: -210px;
+    position: relative;
+    margin-left: -400px;
   }
 }
 

@@ -5,10 +5,11 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--third-color);
-  padding-left: 15px;
+  margin-left: auto;
 
   &--header {
     width: 134px;
+    padding-left: 15px;
   }
 
   &__black {
@@ -25,11 +26,11 @@
     outline-color: var(--third-color);
   }
   &--footer {
-    display: block;
+    display: flex;
+    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 20px;
     width: 154px;
-    margin-left: 40px;
   }
 }
 
